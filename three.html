@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            overflow-y: scroll;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("nail.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFF0F5;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .product-container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            background-color: transparent;
+        }
+
+        .product-page {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+        }
+
+         .product-page-1 {
+            background-color: #FFFFF0;  
+        }
+
+        .product-page-2 {
+            background-color: #F0FFF0; 
+        }
+
+        .product-page-3 {
+            background-color:#DCDCDC; 
+        }
+
+     
+        .product-image {
+            width: 40%; 
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .product-details {
+            width: 60%; 
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-name-1 {
+            color: #00BFFF;     
+        }
+
+        .product-name-2 {
+            color: #90EE90; 
+        }
+
+        .product-name-3 {
+            color: #DC143C; 
+        }
+
+        .product-name {
+            font-size: 26px;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .product-description {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            color: #B22222;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            background-color: #1E90FF;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color:#0056b3;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .product-page {
+                flex-direction: column;
+            }
+
+            .product-image, .product-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">The Polished Petals</div>
+    
+    <div class="product-container">
+        <div class="product-page product-page-1">
+            <div class="product-image">
+                <img src="spring.jpg" alt="Spring">
+            </div>
+            <div class="product-details">
+                <h1 class="product-name product-name-1">Spring</h1>
+                <p class="product-description">
+                    Embrace the freshness of spring with our stunning blue nail designs! Perfect for the season, blue spring nails capture the essence of renewal and vibrancy. Choose from a range of shades, from soothing pastel blues to striking bright hues, each offering a unique twist on classic spring style.
+                </p>
+                <p class="product-price">$45</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-page product-page-2">
+            <div class="product-image">
+                <img src="daisy.jpg" alt="Daisy">
+            </div>
+            <div class="product-details">
+                <h1 class="product-name product-name-2">Daisy</h1>
+                <p class="product-description">
+                    Add a touch of charm to your manicure with our delightful daisy nail designs! Inspired by the classic daisy flower, these nails feature charming daisy patterns with white petals and yellow centers, perfect for a playful and elegant look. Whether you choose a full daisy design, subtle daisy accents, or a mix with complementary colors, these nails bring a cheerful and fresh vibe to any style.
+                </p>
+                <p class="product-price">$39</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-page product-page-3">
+            <div class="product-image">
+                <img src="strawberry.jpg" alt="Strawberry">
+            </div>
+            <div class="product-details">
+                <h1 class="product-name product-name-3">Strawberry</h1>
+                <p class="product-description">
+                  Brighten up your manicure with our playful strawberry nail designs! These fun and fruity nails feature vibrant red strawberries with green leaves, capturing the essence of summertime sweetness. Whether you go for a full strawberry pattern, subtle berry accents, or a mix with other complementary colors, these designs add a fresh and cheerful touch to your look.
+                </p>
+                <p class="product-price">₹59</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
